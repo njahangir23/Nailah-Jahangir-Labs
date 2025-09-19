@@ -23,10 +23,10 @@ texture = ExtResource("2_kkh33")
 anchors_preset = -1
 anchor_right = 0.37800002
 anchor_bottom = 0.303
-offset_left = 117.0
-offset_top = -142.0
-offset_right = 231.616
-offset_bottom = -50.784
+offset_left = 118.0
+offset_top = -146.0
+offset_right = 232.616
+offset_bottom = -54.784
 
 [node name="ColorRect2" parent="." instance=ExtResource("3_u24vh")]
 anchors_preset = -1
