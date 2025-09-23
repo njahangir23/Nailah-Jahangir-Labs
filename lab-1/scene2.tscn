@@ -1,16 +1,16 @@
 [gd_scene format=3 uid="uid://cjic7kc2p8khw"]
 
 [node name="ColorRect" type="ColorRect"]
-modulate = Color(0.5019608, 1, 0.34509805, 1)
-offset_left = 31.0
-offset_top = 16.0
-offset_right = 194.0
-offset_bottom = 146.0
+modulate = Color(0.36077574, 0.99999994, 0.66950524, 1)
+offset_left = 270.0
+offset_top = 62.0
+offset_right = 430.0
+offset_bottom = 192.0
 
 [node name="ColorRect" type="ColorRect" parent="."]
 modulate = Color(1, 0.18431373, 0.05882353, 1)
 layout_mode = 0
-offset_left = 63.0
-offset_top = 113.0
-offset_right = 112.0
-offset_bottom = 275.0
+offset_left = 56.0
+offset_top = 81.0
+offset_right = 105.0
+offset_bottom = 243.0
