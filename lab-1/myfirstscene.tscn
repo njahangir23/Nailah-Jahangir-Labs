@@ -1,47 +1,74 @@
-[gd_scene load_steps=4 format=3 uid="uid://lvbsmm3n6pa4"]
+[gd_scene load_steps=5 format=3 uid="uid://lvbsmm3n6pa4"]
 
 [ext_resource type="Texture2D" uid="uid://b3wkfydsp2uft" path="res://icon.svg" id="1_0s2av"]
 [ext_resource type="Texture2D" uid="uid://qnt10w2oy331" path="res://cat2.png" id="2_kkh33"]
 [ext_resource type="PackedScene" uid="uid://cjic7kc2p8khw" path="res://scene2.tscn" id="3_u24vh"]
+[ext_resource type="PackedScene" uid="uid://dflbyghvr52y0" path="res://scene3.tscn" id="4_ulbin"]
 
 [node name="Robot" type="Sprite2D"]
 modulate = Color(1, 0.9411765, 1, 1)
-position = Vector2(319, 194)
+position = Vector2(552, 78)
 texture = ExtResource("1_0s2av")
 
 [node name="Cat2" type="Sprite2D" parent="."]
-position = Vector2(-246, 280)
+position = Vector2(-483, 112)
 scale = Vector2(0.8194444, 1)
 texture = ExtResource("2_kkh33")
 
 [node name="Cat3" type="Sprite2D" parent="."]
-position = Vector2(-246, -20)
-scale = Vector2(0.8194444, 1)
+position = Vector2(528, 100)
+rotation = 6.2831855
+scale = Vector2(0.8680556, 1)
 texture = ExtResource("2_kkh33")
+flip_h = true
 
 [node name="ColorRect" parent="." instance=ExtResource("3_u24vh")]
 anchors_preset = -1
 anchor_right = 0.37800002
 anchor_bottom = 0.303
-offset_left = 118.0
-offset_top = -146.0
-offset_right = 232.616
-offset_bottom = -54.784
+offset_left = -78.0
+offset_top = 236.0
+offset_right = 36.615997
+offset_bottom = 327.216
 
 [node name="ColorRect2" parent="." instance=ExtResource("3_u24vh")]
 anchors_preset = -1
 anchor_right = 0.37800002
 anchor_bottom = 0.303
-offset_left = 292.0
-offset_top = -142.0
-offset_right = 405.616
-offset_bottom = -50.784
+offset_left = 166.0
+offset_top = 233.0
+offset_right = 279.616
+offset_bottom = 324.216
 
 [node name="ColorRect3" parent="." instance=ExtResource("3_u24vh")]
 anchors_preset = -1
 anchor_right = 0.37800002
 anchor_bottom = 0.303
-offset_left = 463.0
-offset_top = -142.0
-offset_right = 577.61597
-offset_bottom = -50.784
+offset_left = -304.0
+offset_top = 232.0
+offset_right = -189.384
+offset_bottom = 323.216
+
+[node name="ColorRect4" parent="." instance=ExtResource("3_u24vh")]
+anchors_preset = -1
+anchor_right = 0.37800002
+anchor_bottom = 0.303
+offset_left = 419.0
+offset_top = 227.0
+offset_right = 533.61597
+offset_bottom = 318.216
+
+[node name="ColorRect5" parent="." instance=ExtResource("3_u24vh")]
+anchors_preset = -1
+anchor_right = 0.37800002
+anchor_bottom = 0.303
+offset_left = -528.0
+offset_top = 228.0
+offset_right = -413.384
+offset_bottom = 319.216
+
+[node name="Scene3" parent="." instance=ExtResource("4_ulbin")]
+position = Vector2(-673, -73)
+
+[node name="Scene4" parent="." instance=ExtResource("4_ulbin")]
+position = Vector2(-110, -71)

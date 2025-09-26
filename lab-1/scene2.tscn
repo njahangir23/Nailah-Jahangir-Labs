@@ -2,10 +2,10 @@
 
 [node name="ColorRect" type="ColorRect"]
 modulate = Color(0.36077574, 0.99999994, 0.66950524, 1)
-offset_left = 270.0
-offset_top = 62.0
-offset_right = 430.0
-offset_bottom = 192.0
+offset_left = 295.0
+offset_top = 90.0
+offset_right = 455.0
+offset_bottom = 220.0
 
 [node name="ColorRect" type="ColorRect" parent="."]
 modulate = Color(1, 0.18431373, 0.05882353, 1)
