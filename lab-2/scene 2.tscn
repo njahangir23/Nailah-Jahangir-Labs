@@ -3,7 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://crlcrxt6e4nr1" path="res://icon.svg" id="1_fn31u"]
 [ext_resource type="Script" uid="uid://cffnjs4r3ilou" path="res://icon.gd" id="2_ip4sm"]
 
-[node name="Icon" type="Sprite2D"]
+[node name="Player" type="Sprite2D"]
+position = Vector2(155.99998, 106)
 scale = Vector2(1.0390625, 1.046875)
 texture = ExtResource("1_fn31u")
 script = ExtResource("2_ip4sm")
