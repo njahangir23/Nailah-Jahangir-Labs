@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://1cmoysdb8uvj"]
+
+[ext_resource type="PackedScene" uid="uid://b23lttgl1e6ol" path="res://scene 2.tscn" id="1_i7y2r"]
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2(0.99999994, 1)
+
+[node name="Icon" parent="." instance=ExtResource("1_i7y2r")]
+position = Vector2(34.000004, 48)
+
+[node name="Icon2" parent="." instance=ExtResource("1_i7y2r")]
+position = Vector2(88, 225)
+speed = 5
+
+[node name="Icon3" parent="." instance=ExtResource("1_i7y2r")]
+position = Vector2(-154.00003, 412)
+speed = 5
+
+[node name="Icon4" parent="." instance=ExtResource("1_i7y2r")]
+position = Vector2(114, 557)
+speed = 5
