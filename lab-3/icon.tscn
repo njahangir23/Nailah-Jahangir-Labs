@@ -1,4 +1,9 @@
-extends Sprite2D
+[gd_scene load_steps=3 format=3 uid="uid://c2xia2te700cw"]
+
+[ext_resource type="Texture2D" uid="uid://phffoskba2fy" path="res://icon.svg" id="1_tr34o"]
+
+[sub_resource type="GDScript" id="GDScript_tr34o"]
+script/source = "extends Sprite2D
 
 @export var speed = 2
 var conditiontest = true
@@ -18,24 +23,27 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame. 
 # Gets called every single time the computer draws a new frame
 func _process(delta: float) -> void:
-	if Input.is_action_pressed("move_up"):
+	if Input.is_action_pressed(\"move_up\"):
 		position.y -= speed
-	if Input.is_action_pressed("move_down"):
+	if Input.is_action_pressed(\"move_down\"):
 		position.y +=speed
-	if Input.is_action_pressed("move_left"):
+	if Input.is_action_pressed(\"move_left\"):
 		position.x -=speed
-	if Input.is_action_pressed("move_right"):
+	if Input.is_action_pressed(\"move_right\"):
 		position.x += speed
 		
-	if Input.is_action_just_pressed("jump"):
-		print("I jumped")
+	if Input.is_action_just_pressed(\"jump\"):
+		print(\"I jumped\")
 		score += 1
 		print(score)
-		var score_label = get_node("Label")
-		score_label.text = str("Score = ", score)
-		$Heart.hide()
+		var score_label = get_node(\"Label\")
+		score_label.text = str(\"Score = \", score)
 		
 	#if position.x >= screen_width or position.x <= 0:
-		#print("im off screen")
-	#if position.y >= screen_height or position.y <= 0:
-		#print("im off screen")
+		#print(\"im off sc
+"
+
+[node name="Icon" type="Sprite2D"]
+position = Vector2(270, 213)
+texture = ExtResource("1_tr34o")
+script = SubResource("GDScript_tr34o")
