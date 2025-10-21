@@ -18,24 +18,12 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame. 
 # Gets called every single time the computer draws a new frame
 func _process(delta: float) -> void:
-	if Input.is_action_pressed("move_up"):
-		position.y -= speed
-	if Input.is_action_pressed("move_down"):
-		position.y +=speed
-	if Input.is_action_pressed("move_left"):
-		position.x -=speed
 	if Input.is_action_pressed("move_right"):
 		position.x += speed
-		
-	if Input.is_action_just_pressed("jump"):
-		print("I jumped")
-		score += 1
-		print(score)
-		var score_label = get_node("Label")
-		score_label.text = str("Score = ", score)
-		$Heart.hide()
-		
-	#if position.x >= screen_width or position.x <= 0:
-		#print("im off screen")
-	#if position.y >= screen_height or position.y <= 0:
-		#print("im off screen")
+	else:
+		position.x -= 1.5
+
+func _on_area_2d_area_entered(area: Area2D) -> void:
+	score += area.value
+	print(score)
+	pass # Replace with function body.
