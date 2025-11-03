@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://hxumlud51qqf"]
+
+[ext_resource type="PackedScene" uid="uid://7pt6mqdqlk7j" path="res://addons/kaykit_space_base_bits/Assets/gltf/basemodule_B.gltf" id="1_ny82n"]
+
+[node name="basemodule_B2" instance=ExtResource("1_ny82n")]
